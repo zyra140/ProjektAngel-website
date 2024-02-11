@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=TWOJ_KLUCZ_API&callback=initMap"
+      async
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+    <title>ProjektAngel</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="background-text">
+        <h2>Autonomiczne <span>Przejazdy</span></h2>
+      </div>
+      <header class="header">
+        <a id="logo"
+          ><img class="projekt-img" src="images/Project.png" alt=""
+        /></a>
+        <nav class="navbar">
+          <a href="#">Strona główna</a>
+          <a href="#miejsce_docelowe2">Aplikacja mobilna</a>
+          <a href="#miejsce_docelowe3">Nasze pojazdy</a>
+          <a href="#miejsce_docelowe">Zamów teraz</a>
+          <a href="#miejsce_docelowe5">Info</a>
+        </nav>
+        <a href="#" id="menu-bars" class="fas fa-bars"></a>
+      </header>
+      <div class="taxi-image">
+        <img src="images/carmain.png" alt="" />
+      </div>
+    </div>
+
+    <!-- home section -->
+    <a id="miejsce_docelowe2"></a>
+    <div class="home-container">
+      <div class="home-content">
+        <div class="inner-content box-pobierania">
+          <h3>Zainstaluj naszą alikację na telefon!</h3>
+          <h2 class="angel-kolor">PROJEKT ANGEL</h2>
+          <p>i zamawiaj przejazdy jeszcze szybciej!</p>
+          <a id="logo"
+            ><img class="projekt-img2" src="images/Project.png" alt=""
+          /></a>
+          <a target="_blank" href="https://www.apple.com/pl/app-store/">
+          <img class="app-store-icon" src="images/pngegg.png" alt="" />
+        </a>
+          <div class="lub-zamow">
+            <p>lub zamów przejazd przez stronę internetową</p>
+            <a href="#miejsce_docelowe"">
+            <img href="#miejsce_docelowe" src="images/—Pngtree—down arrow_4645178 (1).png" alt="" />
+        </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- home section ended -->
+
+    <!-- our tariff -->
+    <a id="miejsce_docelowe3"></a>
+    <div class="main-tariff">
+      <h1>Nasze <span>pojazdy</span></h1>
+      <div class="inner-tarrif">
+        <div class="tarrif-container">
+          <div class="inner-box">
+            <img src="images/0a0d7a7b-58ee-43ce-bf3a-915ac5a1a45f.png" alt="" />
+            <h2>Komfort</h2>
+            <p>Przestronne i wygodne pojazdy, mieszczące maksymalnie 4 osoby</p>
+            <h3>cena: 3 zł/km</h3>
+            <a href="#miejsce_docelowe">zamów teraz</a>
+          </div>
+        </div>
+
+        <div class="tarrif-container">
+          <div class="inner-box">
+            <img src="images/7be15ebb-aae8-49ae-b772-d72de94ebf80.png" alt="" />
+            <h2 class="heading-yellow">XL</h2>
+            <p>6-osobowe samochody, idealne dla większych grup</p>
+            <h3 class="yellw-section">cena: 5 zł/km /-</h3>
+            <a href="#miejsce_docelowe">zamów teraz</a>
+          </div>
+        </div>
+
+        <div class="tarrif-container">
+          <div class="inner-box">
+            <img src="images/ef0e889c-618c-47f8-aad8-b6ced66ac410.png" alt="" />
+            <h2>Premium</h2>
+            <p>Przejazdy premium w luksusowych samochodach</p>
+            <h3>cena: 15 zł/km /-</h3>
+            <a href="#miejsce_docelowe">zamów teraz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="miejsce_docelowe"></a>
+    <div>
+      <div class="inner-content mapa-imie">
+        <div class="contact-form">
+          <div class="form-heading">
+            <h1>Zamów przejazd przez stronę interenwtową</h1>
+          </div>
+          <div class="form-fields">
+            <input type="text" id="tbuser1" placeholder="imię" />
+            <input type="text" id="tbuser2" placeholder="nazwisko" />
+            <input type="text" id="tbuser3"  pattern="\d{9}" maxlength="9" required placeholder="numer telefonu" title="zły numer telefonu" />
+            <select class="select" name="Klasa pojazdu">
+                <option value="Komfort">Komfort</option>
+                <option value="XL">XL</option>
+                <option value="Premium">Premium</option>
+              </select>
+              
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.012044186328!2d21.029443977019685!3d52.297635852668535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eceb44d4b2f8d%3A0x3e36e5eccc91e460!2s%C5%81abiszy%C5%84ska%2025%2C%2003-204%20Warszawa!5e0!3m2!1spl!2spl!4v1707619592933!5m2!1spl!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="submit">
+            <a type="zamawiam" class="btn1" onclick="openPopup()">ZAMAWIAM</a>
+                <div class="popup" id="popup">
+                    <h2>Dziękujemy za zamówienie przejazdu</h2>
+                    <p>Twój samochód będzie na miejscu za 5minut:</p>
+                    <!-- timer -->
+                    <p>upewnij się czy dane są prawidłowe</p>
+                    <p class="output" id="output1"></p>
+                    <p class="output" id="output2"></p>
+                    <p class="output" id="output3"></p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- our tariff ended -->
+
+    <!-- fast booking -->
+    <div class="fast-booking">
+      <h1 class="fast-hading">Działamy szybciej</h1>
+      <h2>niż możesz pomyśleć</h2>
+      <div class="inner-fast">
+        <div class="booking-content">
+          <div class="inner-fast-text">
+            <h1>Szybkie zamawianie przejazdu</h1>
+            <p>
+              Zamówienie swojego przejazdu zajmnuje naszym uzytkownikom mniej
+              niż minutę!
+            </p>
+          </div>
+        </div>
+        <div class="booking-content">
+          <div class="inner-fast-text">
+            <h1>Niezawodne samochody</h1>
+            <p>
+              Nasze samochody są wyposażone w sztuczną inteligencję, która
+              udowodniła swoją niezawodność, odnotuwując najmniejszą liczbę
+              wykroczeń oraz wypadków drogowych wsród firm przewozowych.
+            </p>
+          </div>
+        </div>
+        <div class="booking-content">
+          <div class="inner-fast-text">
+            <h1>wygoda i bezpieczeństwo</h1>
+            <p>
+              Nasze samochody zawsze wybierają najszybsze drogi oraz nigdy się
+              nie spóżniają, gdy zamówisz przejazd najbliższy samochód od razu
+              po ciebie ruszy!
+            </p>
+          </div>
+        </div>
+        <div class="booking-content">
+          <div class="inner-fast-text">
+            <h1>Ekologia</h1>
+            <p>
+              Dzięki korzystaniu z naszych usług, ograniczasz ilość samochodów
+              poruszających się po mieście, a co za tym idzie imisję spalin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fast booking end -->
+    <a id="miejsce_docelowe5"></a>
+    <div class="testimonials">
+      <h1 class="heading-test">Miliony zadowolonych klientów</h1>
+      <div class="main-testimonials">
+        <div class="inner-test">
+          <p>
+            Dzięki Projekt Angel zawsze wszędzie jestem na czas, jeszcze ani
+            razu się na nich nie zawiodłam
+          </p>
+          <div class="clients">
+            <img src="images/3809c319d6b40a4efda99bf5500fe6ef.jpg" alt="" />
+            <h1>Maria</h1>
+          </div>
+        </div>
+        <div class="inner-test">
+          <p>
+            W końcu nie muszę już marnować czasu na szukaniu miejsca
+            parkingowaego pod moim blokiem.
+          </p>
+          <div class="clients">
+            <img src="images/jhon.png" alt="" />
+            <h1>Dominik</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <div class="myform">
+                <div class="heading">
+                    <h2>book cab</h2>
+                </div>
+                <div class="myfields">
+                    <input type="text" placeholder="when">
+                    <input type="text" placeholder="when">
+                    <input type="text" placeholder="when">
+                    <input type="text" placeholder="when">
+                    <input type="text" placeholder="when">
+                    <input type="text" placeholder="when">
+                </div>
+                <a href="#">Submit</a>
+            </div> -->
